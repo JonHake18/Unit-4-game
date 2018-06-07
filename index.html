@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Crystal Collector Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">	
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Righteous" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+	<div class="row">
+		<div class="col-md-12 h1">
+			Collect Those Crystals
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 h2">
+			Rules of the Game
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12 instructions">
+			* A target number will be randomly assigned.
+			<br/>
+			* Each crystal below has a random number value. Clicking them will add their value to your score.
+			<br/>
+			* If you match the target number with your score then you win. Good Luck!
+			</div>		
+	</div>
+	<div class="row">
+		<div class="col-md-6 crystals">
+			<p class="h2">Click on the Crystals to Play!</p>
+            <br>
+
+            <div class="row">
+			    <img src="assets/images/red.png" id="red" width="100" height="100" alt="Red Crystal"/>
+            </div>
+
+            <div class="row">
+			    <img src="assets/images/blue.png" id="blue" width="100" height="100" alt="Blue Crystal"/>
+            </div>
+
+            <div class="row">
+                <img src="assets/images/yellow.png" id="yellow" width="100" height="100" alt="Yellow Crystal"/>
+            </div>
+
+            <div class="row">
+			    <img src="assets/images/green.png" id="green" width="100" height="100" alt="Green Crystal"/>
+            </div>
+
+        </div>
+		<div class="col-md-6 scoreboard">
+			<p class="h3">Target Number:</p> <span id="target" class="h4"></span>	
+			<p class="h3">Your Score:</p> <span id="score" class="h4"></span>	
+			<p class="h3">Wins:</p> <span id="Wins" class="h4"></span>
+			<p class="h3">Losses:</p> <span id="Losses" class="h4"></span>		
+		</div>	
+    </div>
+    </div>
+</body>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="assets/javascript/game.js"></script>
+</html>
